@@ -1,149 +1,59 @@
-= Building an Application with rpms
+= Getting Started with Llama Stack
 
-== Downloading the UBI
+== Exploring the lab
+The lab is designed to be interactive and hands-on, allowing you to explore the capabilities of LlamaStack and OpenShift AI in a practical setting. The lab environment is pre-configured with all necessary components, so you can focus on learning and experimentation without worrying about setup or configuration issues.
 
-In this lab, you will be installing software into the container 
-image running as an interactive application. To do this you will
-need `yum`, but do not need `systemd` for managing services within the
-container environment.  For that reason, you will be using the *Standard*
-UBI image (as opposed to the Minimal or Multi-service images).
+=== Exploring the nodes
+The lab environment consists of multiple nodes but the important ones to observe are the GPU nodes. These nodes will have the following labels
 
-Using the "buildah from" command will download and meld the container image. This particular image we are using is the Red Hat Universal Base Image or UBI. From the ourput of the command, you will notice that we are pulling down the latest one, which is for RHEL 9. 
+## TO DO PUT IN PICTURE OF NODES
 
-. Execute the  download the Standard UBI
-image from Red Hat's registry.
+=== Accessing OpenShift AI
+The OpenShift AI console is accessible via the OpenShift web console. You can log in using the same credentials used to login to the OpenShift environment to access the OpenShift AI.
 
-+
-[source,sh,role=execute]
-----
-buildah from registry.access.redhat.com/ubi9/ubi
-----
+Locate the OpenShift Route for the OpenShift AI console by performing the following steps:
 
-[#repositories]
-== Installing Repositories
-In this lab, you are going to containerize a software package that is already
-packaged in RPM format and stored in the Extra Packages for Enterprise Linux
-(EPEL) repository.
+1. In the OpenShift web console, navigate to **Networking** > **Routes**.
+2. Filter the list of routes by specifying the Name **rhods**
+3. Click on the URL link to access the OpenShift AI console.
+4. Log in using the same credentials used to log in to the OpenShift environment.
 
-Software often has requirements for prerequisite software that must be installed
-on the machine for it to work properly.  `yum` will resolve those
-dependencies for you, as long as it can locate the required packages in
-repositories defined on the machine.  The Red Hat Universal Base Image (UBI)
-downloaded in the previous step has access to some Red Hat Enterprise Linux
-repositories.  However, the target package for the lab is from EPEL.  
+=== Model serving
+Two models are available for serving in the lab environment:
 
-. In the command below, `buildah` is going to run a command on the
-`ubi-working-container` image.  The `--` indicates that the command should be
-executed from within the container, which means the results will be applied into
-the container image.  Lastly, you are providing the `yum` command to install a
-package that defines all of the repositories from EPEL, `epel-release-latest-9`.
+* Granite 3.2 8B
+* Llama 3.2 3B
 
-+
-[source,bash]
-----
-buildah run ubi-working-container -- yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
-----
+The image below shows the model serving status in the OpenShift AI console.
 
+image::model-deploys.png[Model Deployments, width=100%]
 
-. You can verify that the above command did not install the RPM on the host system.
+These models and their status can be viewed in the OpenShift AI console. Perform the following steps to view the models:
 
-+
-[source,bash]
-----
-rpm -q epel-release
-----
+1. In the OpenShift AI console, navigate to **Models** > **Model Deployments**.
+2. Look for a green check mark next to the model name. This indicates that the model is successfully deployed and ready for use.
 
-NOTE: If your repository configurations are not distributed as an RPM, but instead as
-individual `.repo` files, you could use the `buildah copy` command to copy
-files from the host operating system into the container image.  You will see
-an example of using `buildah copy` later in this lab.
+The models have already been defined within the Llama Stack configuration so that they are ready to be used by the Workbench.
 
-[#software]
-== Installing Software
+=== Accessing the Workbench
+The Workbench is a collaborative environment that allows you to interact with the Llama Stack instance and interact with various AI tools including MCP.
+To access the Workbench, perform the following steps:
 
+1. In the OpenShift AI console, navigate to **Data science projects**
+2. Click on the **llama-serve** project
+3. Click on the **Workbench** tab
+4. Click on the blue **Lab** button which will open a new tab in your browser to the notebook server
 
-. Now that the yum repositories are defined within the container, execute 
-another `yum install`, within the container, to install the target
-software: `moon-buggy`.
+You are now ready to start using the Workbench and explore the capabilities of LlamaStack and OpenShift AI. The Workbench provides a Jupyter-like interface where you can create and run notebooks, access data, and interact with the deployed models.
 
-+
-[source,bash]
-----
-buildah run ubi-working-container -- yum -y install moon-buggy
-----
+== OpenShift AI
 
+OpenShift AI (previously known as Red Hat OpenShift Data Science) is a comprehensive platform designed to streamline the deployment and management of AI/ML workloads on Red Hat OpenShift. It provides data scientists and ML engineers with a robust environment for developing, training, and deploying machine learning models at scale. OpenShift AI integrates various components of the AI/ML lifecycle, including JupyterHub for collaborative notebook experiences, model serving capabilities, and a curated selection of popular frameworks and tools. The platform emphasizes enterprise-grade security, compliance, and governance while offering the flexibility to run AI workloads across hybrid cloud environments. By leveraging Kubernetes orchestration through OpenShift, it ensures consistent deployment experiences and enables organizations to operationalize AI initiatives with greater efficiency and reliability.
 
-== Committing the Container Image
+== LlamaStack Project
 
-. At this point, the container is configured.  It is time to transition from a
-working container into a committed image.  In the command below, you will use
-the `buildah` command to commit the working container to an image called:
-`moon-buggy`.
+LlamaStack is an open-source project originated by Meta that has revolutionized the field of large language models (LLMs). The project centers around the Llama family of models, which offer powerful natural language processing capabilities while being more efficient and accessible than many commercial alternatives. LlamaStack encompasses not just the models themselves but also a growing ecosystem of tools and frameworks for fine-tuning, deployment, and integration. What makes LlamaStack particularly significant is its approach to democratizing access to advanced AI capabilities through permissive licensing that allows for commercial use. The project has garnered substantial community support, leading to numerous implementations, adaptations, and extensions that expand its utility across diverse applications from conversational agents to content generation and knowledge extraction.
 
-+
-[source,bash]
-----
-buildah commit ubi-working-container moon-buggy
-----
+== vLLM
 
-+
-. The output of `podman image list` should confirm the image was created.
-
-+
-[source,bash]
-----
-podman image list
-----
-
-
-== Deploy the Container
-
-Now the software has been installed and a new container image created.  It is
-time to spawn a runtime of the container image and validate the software.  The
-software we are using is a command line command.  
-
-. When you `run` the container,
-it will be in interactive (`-it`) mode, based on the `moon-buggy` container
-image and the command run interactively will be `/usr/bin/moon-buggy`.
-
-+
-[source,bash]
-----
-podman run -it moon-buggy /usr/bin/moon-buggy
-----
-
-+
-[source,textinfo]
-----
-
-<<< OUTPUT ABRIDGED >>>
-               MM     MM   OOOOO    OOOOO   NN     N
-               M M   M M  O     O  O     O  N N    N
-               M  M M  M  O     O  O     O  N  N   N
-               M   M   M  O     O  O     O  N   N  N
-               M       M  O     O  O     O  N    N N
-               M       M   OOOOO    OOOOO   N     NN
-
-                     BBBBBB   U     U   GGGGG    GGGGG   Y     Y
-                     B     B  U     U  G     G  G     G   Y   Y
-                     BBBBBB   U     U  G        G          Y Y
-                     B     B  U     U  G   GGG  G   GGG     Y
-                     B     B  U     U  G     G  G     G    Y
-                     BBBBBB    UUUUU    GGGGG    GGGGG   YY
-
-<<< OUTPUT ABRIDGED >>>
-----
-
-. You can now play the Moon Buggy game, which is a text-based version of the
-popular Moon Patrol.  When you are finished, use the `q` command to quit the
-game, which will terminate the container.
-
-+
-Alternatively, you can use `podman` to kill the running container from
-*Terminal 2*.
-
-+
-[source,bash]
-----
-podman kill $(podman ps | grep -v CONTAINER | cut -f1 -d" " )
-----
+vLLM is a high-performance library for LLM inference and serving that dramatically improves the efficiency of deploying large language models. At its core, vLLM implements PagedAttention, an innovative technique that optimizes memory management by storing KV (Key-Value) cache in non-contiguous memory blocks, similar to virtual memory in operating systems. This approach significantly increases throughput and enables more efficient batch processing of requests. vLLM supports various models including the Llama family, Mistral, and many others, while providing APIs that are compatible with popular frameworks like HuggingFace Transformers. The library excels at continuous batching, effectively handling multiple concurrent requests to maximize GPU utilization. For production deployments, vLLM offers a FastAPI server with OpenAI-compatible endpoints, making it straightforward to integrate into existing applications and workflows that currently use commercial LLM services.
