@@ -21,7 +21,7 @@ The workshop is organized into progressive levels, each building on the concepts
 The lab environment is pre-configured with all necessary components, including:
 
 * Red Hat OpenShift Container Platform
-* OpenShift AI (formerly RHODS)
+* OpenShift AI
 * GPU-enabled nodes for model inference
 * Pre-loaded LLM models
 * JupyterLab workbench environment
