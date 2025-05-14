@@ -31,3 +31,5 @@ A developer asks, "Are there any weather-related risks in my area that could dis
 * *ReAct Framework:* Structuring the agent's thought process into explicit reasoning and action steps for improved transparency and reliability.
 * *Integration of Multiple Tools:* Orchestrating the use of different tools (web search, location services) to address a complex query.
 * *Contextual Understanding:* Maintaining context across multiple steps to provide a comprehensive answer.
+
+image::level3.png[Level 3: Advanced Agentic with Prompt Chaining & ReAct]

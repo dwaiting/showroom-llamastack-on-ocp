@@ -24,3 +24,5 @@ The agent will utilize the RAG component to search our internal document store, 
 * *Retrieval Mechanism:* How LlamaStack identifies and extracts relevant information.
 * *Basic Question Answering:* Using retrieved content to directly answer user queries.
 * *Contextual Awareness (Limited):* Focusing solely on information within the provided documents.
+
+image::level1.png[Level 1 - Simple RAG]

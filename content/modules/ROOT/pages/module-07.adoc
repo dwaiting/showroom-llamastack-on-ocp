@@ -46,3 +46,5 @@ The agent, equipped with sophisticated prompt processing, RAG capabilities conne
 * *Proactive Problem Resolution:* Enabling the agent to not only identify errors but also suggest concrete steps for fixing them.
 
 * *Improved Team Collaboration and Communication:* Automating the process of informing the right teams about critical issues and potential solutions.
+
+image::level6.png[Level 6: Agentic MCP and RAG]

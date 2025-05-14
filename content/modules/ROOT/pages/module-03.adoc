@@ -25,3 +25,5 @@ The agent, recognizing that this information likely resides on Red Hat's officia
 * *External Data Acquisition:* Accessing and processing information from the internet.
 * *Information Synthesis:* Combining information from multiple sources into a coherent answer.
 * *Handling Information Beyond Internal Knowledge:* Expanding the scope of questions the system can answer.
+
+image::level2.png[Level 2 - Simple Agent with Web Search]

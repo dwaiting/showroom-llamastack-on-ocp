@@ -28,3 +28,5 @@ A developer asks, "What are the recommended security best practices for configur
 * *Contextual Awareness for Tool Usage:* Understanding the context of the question to determine the relevance of internal knowledge.
 * *Seamless Integration of Agent and RAG Components:* How the agent framework orchestrates the use of the RAG system.
 * *Prioritizing Internal Knowledge:* Demonstrating the value of leveraging curated internal resources for specific types of queries.
+
+image::level4.png[Level 4 - Agentic RAG]

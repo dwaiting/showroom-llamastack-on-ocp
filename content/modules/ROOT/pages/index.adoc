@@ -2,19 +2,30 @@
 
 == Welcome to the LlamaStack on OpenShift Workshop
 
-This workshop will guide you through using LlamaStack, a powerful framework for building AI applications, running on Red Hat OpenShift AI. You'll learn how to leverage various capabilities from simple Retrieval-Augmented Generation (RAG) to complex agentic systems that can interact with your environment.
+This lab aims to provide a comprehensive, hands-on experience in developing intelligent AI agents with OpenShift, Llama Stack and MCP (Model Context Protocol). Through a progressive series of Jupyter notebooks, participants will learn to build agents capable of utilizing both internal knowledge bases and external web resources, as well as interacting directly with a live OpenShift environment.
 
-== Workshop Structure
+== Lab Objectives
 
-The workshop is organized into progressive levels, each building on the concepts of the previous ones:
+Master the basics of Retrieval-Augmented Generation (RAG) using LlamaStack for information retrieval from custom data sources.
+Develop agents with the capability to utilize external tools like web search to gather a wider range of information.
+Explore advanced agentic capabilities, including location awareness, prompt chaining, and the ReAct framework for complex reasoning and decision-making.
+Integrate RAG, prompt chaining, and MCP tools to build sophisticated automated systems, such as incident response systems within OpenShift.
+Gain practical experience in interacting with and managing OpenShift environments through intelligent agents, automating operational tasks.
+Learn how to leverage agents for effective communication and task automation within platforms like Slack, using MCP tools.
 
-1. **Getting Started with Llama Stack** - Introduction to OpenShift AI, LlamaStack, and vLLM
-2. **Level 1: Simple RAG** - Basic retrieval and knowledge base interaction
-3. **Level 2: Simple Agent with Web Search** - Extending beyond internal knowledge
-4. **Level 3: Advanced Agentic with Prompt Chaining & ReAct** - Sophisticated reasoning and action patterns
-5. **Level 4: Agentic RAG** - Smart integration of retrieval capabilities
-6. **Level 5: Agentic and MCP** - Interaction with OpenShift and communication services
-7. **Level 6: Agentic MCP and RAG** - Complete integration of all capabilities
+== Lab Structure
+
+The lab is structured as a series of Jupyter notebooks that progressively increase in complexity:
+
+Level 0: Environment setup and necessary Python package installations.
+Level 1 - Simple RAG: Introduction to basic RAG principles for information retrieval from internal documents.
+Level 2  - Simple Agent with Web Search: Building agents that can use external web search for information gathering.
+Level 3 - Advanced Agents with Prompt Chaining ReAct: Implementing location awareness, prompt chaining, and the ReAct framework for more complex decision-making processes.
+Level 4 - RAG Agent: Strategically integrating RAG as a tool within the agent's decision-making process.
+Level 5 - Agents and MCP: Utilizing MCP tools to interact with OpenShift and Slack for operational automation and communication.
+Level 6 - Agents, MCP and RAG: Combining prompt chaining, RAG, and MCP tools to develop a complete, automated incident response system.
+
+This lab will empower participants to construct and deploy AI agents capable of navigating intricate tasks, retrieving relevant information from multiple sources, and automating operational workflows within an enterprise-grade OpenShift environment.
 
 == Lab Environment
 
@@ -25,5 +36,10 @@ The lab environment is pre-configured with all necessary components, including:
 * GPU-enabled nodes for model inference
 * Pre-loaded LLM models
 * JupyterLab workbench environment
+
+== Models used in this lab
+
+* Granite32-8b
+* Llama32-3b
 
 Start with the first module to begin exploring the capabilities of LlamaStack on OpenShift!

@@ -37,3 +37,5 @@ The agent, equipped with the necessary MCP tools for OpenShift and Slack, will:
 * *Conditional Logic in Operations:* Implementing logic that allows the agent to make decisions and execute different actions based on the state of the environment or the results of analysis.
 
 * *Error Detection and Alerting:* Automating the process of identifying errors in logs and proactively notifying the appropriate teams.
+
+image::level5.png[Level 5 - Agentic and MCP]
