@@ -1,5 +1,7 @@
 = Exploring the Lab
 
+The lab is designed to be interactive and hands-on, allowing you to explore the capabilities of LlamaStack and OpenShift AI in a practical setting. The lab environment is pre-configured with all necessary components, so you can focus on learning and experimentation without worrying about setup or configuration issues.
+
 == OpenShift Console 
 
 Log in to the cluster: Navigate to the OpenShift cluster and login with the provided credentials. 
