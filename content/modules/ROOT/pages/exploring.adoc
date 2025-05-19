@@ -2,9 +2,11 @@
 
 The lab is designed to be interactive and hands-on, allowing you to explore the capabilities of LlamaStack and OpenShift AI in a practical setting. The lab environment is pre-configured with all necessary components, so you can focus on learning and experimentation without worrying about setup or configuration issues.
 
-== OpenShift Console 
+== OpenShift Console
 
-Log in to the cluster: Navigate to the OpenShift cluster and login with the provided credentials. 
+Log in to the cluster: Navigate to the OpenShift cluster and login with the provided credentials.
+
+The URL for the OpenShift console is: {{ openshift_console_url }}
 
 image::exploring-login.png[OpenShift Login, width=100%]
 
@@ -28,7 +30,7 @@ image::exploring-pods-list.png[OpenShift Pods List, width=100%]
 
 == Red Hat OpenShift AI Console
 
-To view the models running on Openshift AI, click on the `Red Hat OpenShift AI` application as shown below:
+To view the models running on Openshift AI, use the following URL https://rhods-dashboard-redhat-ods-applications.{{ openshift_cluster_ingress_domain }}/ or click on the `Red Hat OpenShift AI` application as shown below:
 
 image::exploring-RHOAI.png[RHOAI page, width=100%]
 
@@ -43,7 +45,7 @@ You will see two models running via the RHOAI vLLM ServingRuntime:
 
 === Jupyter Notebook Workbench
 
-To launch the Jupyter notebook workbench, please follow the steps as shown below:
+To launch the Jupyter notebook workbench use the following link https://lab-llama-serve.{{ openshift_cluster_ingress_domain }}/notebook/llama-serve/lab/lab or follow the steps as shown below:
 
 Your Jupyter workbench can be found in `Data science projects` (located on the left hand side of the console). Select the project `llama-serve`:
 
