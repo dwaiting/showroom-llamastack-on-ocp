@@ -19,8 +19,8 @@ Once logged into the workspace make sure to join the link:https://app.slack.com/
 
 To run this notebook, please select `Level6_agents_MCP_and_RAG.ipynb` from the file browser.
 
-image::../assets/images/Level6_intro.png[Level6 - agents_MCP_and_RAG]
+image::Level6_intro.png[Level6 - agents_MCP_and_RAG]
 
 To execute the notebook cells, navigate to the top toolbar. Click the fast-forward (⏩) icon to restart the kernel and execute all cells sequentially from top to bottom.
 
-image::../assets/images/run_notebook.png[Run Notebook]
+image::run_notebook.png[Run Notebook]
