@@ -4,7 +4,7 @@ Before starting the demo, it's essential to execute the Level 0 notebook to conf
 
 image::level0.png[Level 0 - Setting up the environment]
 
-=== Tavily key
+== Tavily key
 
 For running some of these notebooks, you will need a Tavily key. 
 Go to https://tavily.com/ and register for a free account. This is needed to enable the Llama Stack built-in web search tool. 
@@ -12,7 +12,7 @@ Once logged in, access the `Overview` section where you will find your default A
 
 image::tavily_key.png[Tavily Key]
 
-=== Add your Tavily key to .env
+== Add your Tavily key to .env
 
 We will now add the Tavily key to our `.env` file. Once you have obtained your Tavily key, go back to your Jupyter workbench and navigate to `File -> New -> Terminal` to open a terminal window within the workbench.
 
@@ -22,7 +22,7 @@ Next, run `ls -a` to show all the files under the current directory, including t
 
 image::repo_files.png[List files under worbench directory]
 
-Lets use `cat .env` to look at what’s inside this file. We have set all the default environment variables as follows:
+Lets use `cat .env` to look at what's inside this file. We have set all the default environment variables as follows:
 
 image::env_file.png[Diplay .env file]
 
