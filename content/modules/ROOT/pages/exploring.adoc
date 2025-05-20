@@ -6,7 +6,7 @@ The lab is designed to be interactive and hands-on, allowing you to explore the 
 
 Log in to the cluster: Navigate to the OpenShift cluster and login with the provided credentials.
 
-The URL for the OpenShift console is: { openshift_console_url }
+The URL for the OpenShift console is: {openshift_console_url}
 
 image::exploring-login.png[OpenShift Login, width=100%]
 
