@@ -45,7 +45,7 @@ You will see two models running via the RHOAI vLLM ServingRuntime:
 
 === Jupyter Notebook Workbench
 
-To launch the Jupyter notebook workbench use the following link https://lab-llama-serve.{openshift_cluster_ingress_domain}/notebook/llama-serve/lab/lab or follow the steps as shown below:
+To launch the Jupyter notebook workbench use the following link https://lab-llama-serve.{openshift_cluster_ingress_domain}/notebook/llama-serve/lab/lab? or follow the steps as shown below:
 
 Your Jupyter workbench can be found in `Data science projects` (located on the left hand side of the console). Select the project `llama-serve`:
 
