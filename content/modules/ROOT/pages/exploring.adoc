@@ -30,7 +30,7 @@ image::exploring-pods-list.png[OpenShift Pods List, width=100%]
 
 == Red Hat OpenShift AI Console
 
-To view the models running on Openshift AI, use the following URL https://rhods-dashboard-redhat-ods-applications.{ openshift_cluster_ingress_domain }/ or click on the `Red Hat OpenShift AI` application as shown below:
+To view the models running on Openshift AI, use the following URL https://rhods-dashboard-redhat-ods-applications.{openshift_cluster_ingress_domain}/ or click on the `Red Hat OpenShift AI` application as shown below:
 
 image::exploring-RHOAI.png[RHOAI page, width=100%]
 
@@ -45,7 +45,7 @@ You will see two models running via the RHOAI vLLM ServingRuntime:
 
 === Jupyter Notebook Workbench
 
-To launch the Jupyter notebook workbench use the following link https://lab-llama-serve.{ openshift_cluster_ingress_domain }/notebook/llama-serve/lab/lab or follow the steps as shown below:
+To launch the Jupyter notebook workbench use the following link https://lab-llama-serve.{openshift_cluster_ingress_domain}/notebook/llama-serve/lab/lab or follow the steps as shown below:
 
 Your Jupyter workbench can be found in `Data science projects` (located on the left hand side of the console). Select the project `llama-serve`:
 
