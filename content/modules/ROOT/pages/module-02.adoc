@@ -6,7 +6,7 @@ In this notebook we will be using Llama Stack to run a simple RAG example.
 
 *Understand the core mechanics of RAG and Vector Databases in LlamaStack.*
 
-* *Vector Database Interaction*: How to connect to a vector database, insert documents and submit queries. 
+* *Vector Database Interaction*: How to connect to a vector database, insert documents and submit queries.
 * *Retrieval Mechanism:* How LlamaStack identifies and extracts relevant information.
 * *Basic Question Answering:* Using retrieved content in conjunction with inference to generate dataset specific answers.
 
@@ -16,6 +16,6 @@ To run this notebook, please select `Level1_simple_RAG.ipynb` from the file brow
 
 image::Level1_intro.png[Level 1 - Simple RAG]
 
-To execute the notebook cells, navigate to the top toolbar. Click the fast-forward (⏩) icon to restart the kernel and execute all cells sequentially from top to bottom.
+To execute the notebook cells, navigate to the top toolbar. Click the fast-forward (⏩) icon to restart the kernel and execute all cells sequentially from top to bottom. Alternatively, you can click the play (▶️) icon to run individual cells one at a time. If you need to restart the kernel, you can do so by clicking the (🔄) icon.
 
 image::run_notebook.png[Run Notebook]
