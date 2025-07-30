@@ -38,7 +38,7 @@ Navigate to the `Model deployments` tab that is located on the left hand side:
 
 image::exploring-models.png[OpenShift Models, width=100%]
 
-You will see one models running via the RHOAI vLLM ServingRuntime:
+You will see one model running via the RHOAI vLLM ServingRuntime:
 
 * granite3.2-8b
 
