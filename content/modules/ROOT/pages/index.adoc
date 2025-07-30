@@ -35,7 +35,7 @@ RHOAI model deployment makes LLMs accessible as scalable and manageable API endp
 
 === Models
 
-For this lab, we deploy two LLM models:
+For this lab, we deploy one LLM model using Red Hat OpenShift AI (RHOAI) and we will utilze a second model that is remotely hosted outside of the cluster. The models are:
 
 * IBM Granite 3.2 8B Instruct:  is an 8-billion-parameter, long-context AI model fine-tuned for thinking capabilities. Built on top of Granite-3.1-8B-Instruct, it has been trained using a mix of permissively licensed open-source datasets and internally generated synthetic data designed for reasoning tasks. The model allows controllability of its thinking capability, ensuring it is applied only when required.
 * Meta LLama 3.2 3B: The Llama 3.2 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction-tuned generative models in 1B and 3B sizes (text in/text out). The Llama 3.2 instruction-tuned text only models are optimized for multilingual dialogue use cases, including agentic retrieval and summarization tasks. They outperform many of the available open source and closed chat models on common industry benchmarks.
