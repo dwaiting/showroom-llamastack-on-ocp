@@ -12,16 +12,16 @@ This lab provides a comprehensive, hands-on experience developing intelligent AI
 == Environment - Red Hat OpenShift AI
 
 
-For this lab, we built notebooks running in a Red Hat OpenShift AI (RHOAI) environment. RHOAI is a comprehensive, flexible, and scalable platform engineered to support the full lifecycle of AI and ML application development and deployment. Built upon the enterprise-grade Kubernetes foundation of Red Hat OpenShift, it provides a consistent and robust environment for data scientists, developers, and MLOps engineers to collaborate. RHOAI facilitates a wide array of tasks including data acquisition and preparation, model training and fine-tuning, model serving, and ongoing monitoring, all while supporting hardware acceleration to optimize performance.  
+For this lab, we built notebooks running in a Red Hat OpenShift AI (RHOAI) environment. RHOAI is a comprehensive, flexible, and scalable platform engineered to support the full lifecycle of AI and ML application development and deployment. Built upon the enterprise-grade Kubernetes foundation of Red Hat OpenShift, it provides a consistent and robust environment for data scientists, developers, and MLOps engineers to collaborate. RHOAI facilitates a wide array of tasks including data acquisition and preparation, model training and fine-tuning, model serving, and ongoing monitoring, all while supporting hardware acceleration to optimize performance.
 The platform is designed to streamline AI/ML workflows and accelerate the delivery of AI-powered intelligent applications across hybrid cloud environments, encompassing on-premises, public cloud, and edge deployments. By integrating a suite of tested and supported open-source AI/ML tools and frameworks, such as Jupyter notebooks, Model Registry, Training Operator and PyTorch, alongside capabilities for managing AI accelerators like GPU, RHOAI aims to reduce operational complexity. This allows teams to focus on innovation and efficiently build, scale, and manage their AI models and applications with enhanced security and consistency.
 
 For this lab, an OpenShift environment will be deployed for you with the following components:
 
 
 * RHOAI
-    ** vLLM Model Servers 
-        *** IBM Granite 3.2 8B Instruct 
-        *** Meta LLama 3.2 3B Instruct
+    ** vLLM Model Servers
+        *** IBM Granite 3.2 8B Instruct
+        *** Meta LLama 3.2 3B
     ** Workbench
         *** Jupyter notebooks levels 1-6
 * Llama Stack server
@@ -29,7 +29,7 @@ For this lab, an OpenShift environment will be deployed for you with the followi
     ** OpenShift
     ** Slack
 
-== RHOAI model deployment via vLLM 
+== RHOAI model deployment via vLLM
 
 RHOAI model deployment makes LLMs accessible as scalable and manageable API endpoints. This enables developers and data scientists to integrate these models with LLama Stack applications. For our lab, we use https://docs.vlslm.ai/[vLLM] as a runtime for RHOAI model deployment. vLLM is an open-source, high-performance inference engine designed to optimize the deployment of large language models (LLMs) in real-time applications. At its core, vLLM introduces the PagedAttention algorithm, which draws inspiration from operating system paging techniques to manage key-value (KV) cache memory efficiently.
 
@@ -38,12 +38,12 @@ RHOAI model deployment makes LLMs accessible as scalable and manageable API endp
 For this lab, we deploy two LLM models:
 
 * IBM Granite 3.2 8B Instruct:  is an 8-billion-parameter, long-context AI model fine-tuned for thinking capabilities. Built on top of Granite-3.1-8B-Instruct, it has been trained using a mix of permissively licensed open-source datasets and internally generated synthetic data designed for reasoning tasks. The model allows controllability of its thinking capability, ensuring it is applied only when required.
-* Meta LLama 3.2 3B Instruct: The Llama 3.2 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction-tuned generative models in 1B and 3B sizes (text in/text out). The Llama 3.2 instruction-tuned text only models are optimized for multilingual dialogue use cases, including agentic retrieval and summarization tasks. They outperform many of the available open source and closed chat models on common industry benchmarks.
+* Meta LLama 3.2 3B: The Llama 3.2 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction-tuned generative models in 1B and 3B sizes (text in/text out). The Llama 3.2 instruction-tuned text only models are optimized for multilingual dialogue use cases, including agentic retrieval and summarization tasks. They outperform many of the available open source and closed chat models on common industry benchmarks.
 
 We use the IBM Granite 3.2 8B Instruct model as a default in all the notebooks for a consistent performance. However, you can also experiment and try out the Meta LLama 3.2 3B Instruct model to compare the performance and characteristics of both the models.
 
 == Llama Stack Server
-https://github.com/meta-llama/llama-stack[Llama Stack] is a comprehensive, open-source framework started at Meta, designed to streamline the creation, deployment, and scaling of generative AI applications. It provides a standardized set of tools and APIs that encompass the entire AI development lifecycle, including inference, fine-tuning, evaluation, safety protocols, and the development of agentic systems capable of complex task execution. By offering a unified interface, Llama Stack aims to simplify the often complex process of integrating advanced AI capabilities into various applications and infrastructures.  
+https://github.com/meta-llama/llama-stack[Llama Stack] is a comprehensive, open-source framework started at Meta, designed to streamline the creation, deployment, and scaling of generative AI applications. It provides a standardized set of tools and APIs that encompass the entire AI development lifecycle, including inference, fine-tuning, evaluation, safety protocols, and the development of agentic systems capable of complex task execution. By offering a unified interface, Llama Stack aims to simplify the often complex process of integrating advanced AI capabilities into various applications and infrastructures.
 The core purpose of Llama Stack is to empower developers by reducing friction and complexity, allowing them to focus on building innovative and transformative AI solutions. It codifies best practices within the generative AI ecosystem, offering pre-built tools and support for features like tool calling and retrieval augmented generation (RAG). This standardization facilitates a more consistent development experience, whether deploying locally, on-premises, or in the cloud, and fosters greater interoperability within the rapidly evolving generative AI community. Ultimately, Llama Stack seeks to accelerate the adoption and advancement of generative AI by providing a robust and accessible platform for developers of all sizes.
 
 === Built-in Tools with Llama Stack
@@ -94,4 +94,3 @@ This lab will teach participants how to build AI agents capable of navigating in
 == Feedback
 
 If you have any feedback on this demo series we'd love to hear it! Please go to https://www.feedback.redhat.com/jfe/form/SV_8pQsoy0U9Ccqsvk and help us improve our demos.
-

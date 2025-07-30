@@ -38,9 +38,12 @@ Navigate to the `Model deployments` tab that is located on the left hand side:
 
 image::exploring-models.png[OpenShift Models, width=100%]
 
-You will see two models running via the RHOAI vLLM ServingRuntime:
+You will see one models running via the RHOAI vLLM ServingRuntime:
 
 * granite3.2-8b
+
+Another model is also available in the Llama Stack environment, but it is not running via RHOAI vLLM ServingRuntime. This has been done to demonstrate the flexibility of Llama Stack in supporting inference servers that exist outside of the RHOAI environment. The remote model is:
+
 * llama3.2-3b
 
 === Jupyter Notebook Workbench
