@@ -20,7 +20,7 @@ For this lab, an OpenShift environment will be deployed for you with the followi
 
 * RHOAI
     ** vLLM Model Servers
-        *** IBM Granite 3.2 8B
+        *** IBM Granite 3.2 8B Instruct
         *** Meta LLama 3.2 3B
     ** Workbench
         *** Jupyter notebooks levels 1-6
