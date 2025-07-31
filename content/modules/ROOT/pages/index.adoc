@@ -19,9 +19,10 @@ For this lab, an OpenShift environment will be deployed for you with the followi
 
 
 * RHOAI
-    ** vLLM Model Servers
+    ** vLLM Model Server
         *** IBM Granite 3.2 8B Instruct
-        *** Meta LLama 3.2 3B
+    ** Remote vLLM Model Server
+        *** Meta LLama 3.2 3B Instruct
     ** Workbench
         *** Jupyter notebooks levels 1-6
 * Llama Stack server
@@ -38,9 +39,9 @@ RHOAI model deployment makes LLMs accessible as scalable and manageable API endp
 For this lab, we deploy one LLM model using Red Hat OpenShift AI (RHOAI) and we will utilze a second model that is remotely hosted outside of the cluster. The models are:
 
 * IBM Granite 3.2 8B Instruct:  is an 8-billion-parameter, long-context AI model fine-tuned for thinking capabilities. Built on top of Granite-3.1-8B-Instruct, it has been trained using a mix of permissively licensed open-source datasets and internally generated synthetic data designed for reasoning tasks. The model allows controllability of its thinking capability, ensuring it is applied only when required.
-* Meta LLama 3.2 3B: The Llama 3.2 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction-tuned generative models in 1B and 3B sizes (text in/text out). The Llama 3.2 instruction-tuned text only models are optimized for multilingual dialogue use cases, including agentic retrieval and summarization tasks. They outperform many of the available open source and closed chat models on common industry benchmarks.
+* Meta LLama 3.2 3B Instruct: The Llama 3.2 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction-tuned generative models in 1B and 3B sizes (text in/text out). The Llama 3.2 instruction-tuned text only models are optimized for multilingual dialogue use cases, including agentic retrieval and summarization tasks. They outperform many of the available open source and closed chat models on common industry benchmarks.
 
-We use the IBM Granite 3.2 8B Instruct model as a default in all the notebooks for a consistent performance. However, you can also experiment and try out the Meta LLama 3.2 3B model to compare the performance and characteristics of both the models.
+We use the IBM Granite 3.2 8B Instruct model as a default in all the notebooks for a consistent performance. However, you can also experiment and try out the Meta LLama 3.2 3B Instruct model to compare the performance and characteristics of both the models.
 
 == Llama Stack Server
 https://github.com/meta-llama/llama-stack[Llama Stack] is a comprehensive, open-source framework started at Meta, designed to streamline the creation, deployment, and scaling of generative AI applications. It provides a standardized set of tools and APIs that encompass the entire AI development lifecycle, including inference, fine-tuning, evaluation, safety protocols, and the development of agentic systems capable of complex task execution. By offering a unified interface, Llama Stack aims to simplify the often complex process of integrating advanced AI capabilities into various applications and infrastructures.
