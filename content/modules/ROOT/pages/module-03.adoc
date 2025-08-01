@@ -32,6 +32,7 @@ The agent should automatically determine when to use web search, perform searche
 * Dynamic tool selection based on user queries
 * Information synthesis from external sources
 
+[[run-notebook-2]]
 == Run Notebook 2
 
 To run this notebook, please select `Level2_simple_agent_with_websearch.ipynb` from the file browser.

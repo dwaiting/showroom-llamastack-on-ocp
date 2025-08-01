@@ -1,5 +1,6 @@
 = Level 0 - Setting up the environment
 
+[[add-granite-inference-server-to-llama-stack]]
 == Add Granite inference server to Llama Stack
 
 The environment will take care of establishing a connection to an existing Llama 3B inference server but for this lab we will also set up a Granite inference server. The Granite inference server is using a GPU and is launched using Red Hat OpenShift AI.
@@ -62,6 +63,7 @@ image::pod_logs.png[Pod Logs]
 `INFO: Uvicorn running on http://['::', '0.0.0.0']:8321 (Press CTRL+C to quit)` is the key log message that indicates the Llama Stack environment is running successfully.
 
 
+[[setting-up-the-environment]]
 == Setting up the environment
 
 Before starting the demo, it's essential to execute the Level 0 notebook to configure your environment. This includes tasks such as installing necessary packages and setting up environment variables using the `.env` file.

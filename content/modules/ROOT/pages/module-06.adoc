@@ -36,6 +36,7 @@ We will be interacting with a Slack MCP server in this notebook for which you wi
 
 Once logged into the workspace make sure to join the link:https://app.slack.com/client/T08M9UTL2DC/C08MUDSNHED[#demos] channel.
 
+[[run-notebook-5]]
 == Run Notebook 5
 
 To run this notebook, please select `Level5_agents_and_mcp.ipynb` from the file browser.

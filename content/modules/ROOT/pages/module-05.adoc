@@ -31,6 +31,7 @@ The agent should intelligently assess queries, determine the need for additional
 * Dynamic query assessment and response planning
 * Intelligent information retrieval and synthesis
 
+[[run-notebook-4]]
 == Run Notebook 4
 
 To run this notebook, please select `Level4_RAG_Agent.ipynb` from the file browser.

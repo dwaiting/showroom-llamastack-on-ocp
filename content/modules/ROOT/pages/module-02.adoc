@@ -34,6 +34,7 @@ The system should retrieve relevant documents from the vector database and use t
 * Basic RAG architecture and workflow
 * Integration of retrieval and generation components
 
+[[run-notebook-1]]
 == Run Notebook 1
 
 To run this notebook, please select `Level1_simple_RAG.ipynb` from the file browser.

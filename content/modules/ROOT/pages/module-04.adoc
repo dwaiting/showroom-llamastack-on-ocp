@@ -32,6 +32,7 @@ The agent should demonstrate structured thinking, break complex tasks into manag
 * Complex task decomposition and execution
 * Structured action planning and decision-making
 
+[[run-notebook-3]]
 == Running Notebook 3
 
 To run this notebook, please select `Level3_advanced_agent_with _Prompt_Chaining_and_ReAct.ipynb` from the file browser.

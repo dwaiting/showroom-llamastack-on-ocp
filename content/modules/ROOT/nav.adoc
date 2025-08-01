@@ -16,6 +16,8 @@
 *** xref:exploring.adoc#jupyter-notebook-workbench[Jupyter Notebook Workbench]
 
 * xref:module-01.adoc[Level 0 - Setting up the environment]
+** xref:module-01.adoc#add-granite-inference-server-to-llama-stack[Add Granite inference server to Llama Stack]
+** xref:module-01.adoc#setting-up-the-environment[Setting up the environment]
 ** xref:module-01.adoc#tavily-key[Tavily key]
 ** xref:module-01.adoc#add-your-tavily-key-to-env[Add your Tavily key to .env]
 ** xref:module-01.adoc#run-notebook-0[Run Notebook 0]
@@ -26,6 +28,7 @@
 ** xref:module-02.adoc#task-example[Task Example]
 ** xref:module-02.adoc#expected-agent-behavior[Expected Agent Behavior]
 ** xref:module-02.adoc#key-concepts-demonstrated[Key Concepts Demonstrated]
+** xref:module-02.adoc#run-notebook-1[Run Notebook 1]
 
 * xref:module-03.adoc[Level 2 - Simple Agent with Web Search]
 ** xref:module-03.adoc#focus[Focus]
@@ -33,6 +36,7 @@
 ** xref:module-03.adoc#task-example[Task Example]
 ** xref:module-03.adoc#expected-agent-behavior[Expected Agent Behavior]
 ** xref:module-03.adoc#key-concepts-demonstrated[Key Concepts Demonstrated]
+** xref:module-03.adoc#run-notebook-2[Run Notebook 2]
 
 * xref:module-04.adoc[Level 3 - Advanced Agentic with Prompt Chaining & ReAct]
 ** xref:module-04.adoc#focus[Focus]
@@ -40,6 +44,7 @@
 ** xref:module-04.adoc#task-example[Task Example]
 ** xref:module-04.adoc#expected-agent-behavior[Expected Agent Behavior]
 ** xref:module-04.adoc#key-concepts-demonstrated[Key Concepts Demonstrated]
+** xref:module-04.adoc#run-notebook-3[Run Notebook 3]
 
 * xref:module-05.adoc[Level 4 - Agentic RAG]
 ** xref:module-05.adoc#focus[Focus]
@@ -47,6 +52,7 @@
 ** xref:module-05.adoc#task-example[Task Example]
 ** xref:module-05.adoc#expected-agent-behavior[Expected Agent Behavior]
 ** xref:module-05.adoc#key-concepts-demonstrated[Key Concepts Demonstrated]
+** xref:module-05.adoc#run-notebook-4[Run Notebook 4]
 
 * xref:module-06.adoc[Level 5 - Agentic and MCP]
 ** xref:module-06.adoc#focus[Focus]
@@ -54,6 +60,7 @@
 ** xref:module-06.adoc#task-example[Task Example]
 ** xref:module-06.adoc#expected-agent-behavior[Expected Agent Behavior]
 ** xref:module-06.adoc#key-concepts-demonstrated[Key Concepts Demonstrated]
+** xref:module-06.adoc#run-notebook-5[Run Notebook 5]
 
 * xref:module-07.adoc[Level 6 - Agentic MCP and RAG]
 ** xref:module-07.adoc#focus[Focus]
@@ -61,3 +68,4 @@
 ** xref:module-07.adoc#task-example[Task Example]
 ** xref:module-07.adoc#expected-agent-behavior[Expected Agent Behavior]
 ** xref:module-07.adoc#key-concepts-demonstrated[Key Concepts Demonstrated]
+** xref:module-07.adoc#run-notebook-6[Run Notebook 6]
