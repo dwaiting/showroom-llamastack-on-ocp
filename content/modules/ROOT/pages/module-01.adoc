@@ -44,7 +44,7 @@ Navigate to the `llama-serve` project and under `Workloads` select `Deployments`
 
 image::deployment.jpg[Deployment]
 
-Select the `llama-serve` deployment. When the deployment opens, click on the `YAML` tab to view the YAML configuration. Add the following environment variables under the `spec.template.spec.containers.env` section:
+Select the `llamastack-deployment` deployment. When the deployment opens, click on the `YAML` tab to view the YAML configuration. Add the following environment variables under the `spec.template.spec.containers.env` section:
 
 ```
           env:
