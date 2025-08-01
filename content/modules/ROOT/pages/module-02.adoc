@@ -2,13 +2,37 @@
 
 In this notebook we will be using Llama Stack to run a simple RAG example.
 
-== Learning Objectives
+[[focus]]
+== Focus
+
+Building a simple RAG application using Llama Stack to understand the fundamentals of document retrieval and question answering.
+
+[[learning-objective]]
+== Learning Objective
 
 *Understand the core mechanics of RAG and Vector Databases in LlamaStack.*
 
 * *Vector Database Interaction*: How to connect to a vector database, insert documents and submit queries.
 * *Retrieval Mechanism:* How LlamaStack identifies and extracts relevant information.
 * *Basic Question Answering:* Using retrieved content in conjunction with inference to generate dataset specific answers.
+
+[[task-example]]
+== Task Example
+
+Users will work with a vector database to index documents and perform semantic searches to answer questions using retrieved context.
+
+[[expected-agent-behavior]]
+== Expected Agent Behavior
+
+The system should retrieve relevant documents from the vector database and use them to provide accurate, contextual answers to user queries.
+
+[[key-concepts-demonstrated]]
+== Key Concepts Demonstrated
+
+* Vector database operations and document indexing
+* Semantic search and retrieval mechanisms
+* Basic RAG architecture and workflow
+* Integration of retrieval and generation components
 
 == Run Notebook 1
 

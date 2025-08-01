@@ -2,10 +2,34 @@
 
 In this notebook we will be building a RAG agent using Llama Stack.
 
-== Learning Objectives
+[[focus]]
+== Focus
+
+Integrating RAG capabilities within an autonomous agent framework that can decide when to retrieve information versus answering directly.
+
+[[learning-objective]]
+== Learning Objective
 
 * *Understand how to define and implement Retrieval Augmented Generation (RAG) within an AI agent framework*
 * *How to enable agents to autonomously decide when to use RAG and when to answer questions directly*
+
+[[task-example]]
+== Task Example
+
+Users will create an intelligent agent that autonomously decides when to use RAG for information retrieval versus answering questions from its existing knowledge.
+
+[[expected-agent-behavior]]
+== Expected Agent Behavior
+
+The agent should intelligently assess queries, determine the need for additional information, retrieve relevant documents when necessary, and provide well-informed responses.
+
+[[key-concepts-demonstrated]]
+== Key Concepts Demonstrated
+
+* Autonomous decision-making for tool usage
+* Strategic integration of RAG within agent workflows
+* Dynamic query assessment and response planning
+* Intelligent information retrieval and synthesis
 
 == Run Notebook 4
 

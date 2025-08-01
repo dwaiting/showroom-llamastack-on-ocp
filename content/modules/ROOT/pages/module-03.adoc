@@ -2,11 +2,35 @@
 
 In this notebook, we will be building a simple web search agent using Llama Stack.
 
-== Learning Objectives
+[[focus]]
+== Focus
+
+Building a web search-enabled agent using Llama Stack's built-in tools to demonstrate tool integration and usage.
+
+[[learning-objective]]
+== Learning Objective
 
 * *Understand how to equip an agent* with Llama Stack’s built-in tools, specifically web search
 * *Utilize tools to fulfill user requests*
 * *Grasp the basic architecture of an agent framework and the concept of tool invocation*
+
+[[task-example]]
+== Task Example
+
+Users will create an agent that can perform web searches to gather current information and answer questions using retrieved web content.
+
+[[expected-agent-behavior]]
+== Expected Agent Behavior
+
+The agent should automatically determine when to use web search, perform searches effectively, and incorporate search results into coherent responses.
+
+[[key-concepts-demonstrated]]
+== Key Concepts Demonstrated
+
+* Tool integration and invocation within agent frameworks
+* Web search tool configuration and usage
+* Dynamic tool selection based on user queries
+* Information synthesis from external sources
 
 == Run Notebook 2
 

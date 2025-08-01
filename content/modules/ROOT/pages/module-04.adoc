@@ -2,11 +2,35 @@
 
 In this notebook, we will be using Llama Stack to build an advanced agent with prompt chaining and ReAct functionalities.
 
-== Learning Objectives
+[[focus]]
+== Focus
+
+Implementing advanced agent patterns including prompt chaining and ReAct framework for complex reasoning and structured decision-making.
+
+[[learning-objective]]
+== Learning Objective
 
 * *Understand how to build agents that are capable of complex reasoning through prompt chaining*
 * *Employ the ReAct framework for structured action planning*
 * *Learn how to integrate effective prompt chains for multi-turn interactions*
+
+[[task-example]]
+== Task Example
+
+Users will build an agent that uses prompt chaining to break down complex problems and the ReAct framework to reason through actions systematically.
+
+[[expected-agent-behavior]]
+== Expected Agent Behavior
+
+The agent should demonstrate structured thinking, break complex tasks into manageable steps, and use the ReAct pattern (Reason-Act-Observe) for systematic problem-solving.
+
+[[key-concepts-demonstrated]]
+== Key Concepts Demonstrated
+
+* Prompt chaining techniques for multi-step reasoning
+* ReAct framework implementation and usage
+* Complex task decomposition and execution
+* Structured action planning and decision-making
 
 == Running Notebook 3
 

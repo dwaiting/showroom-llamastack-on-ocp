@@ -68,6 +68,7 @@ Before starting the demo, it's essential to execute the Level 0 notebook to conf
 
 image::level0.png[Level 0 - Setting up the environment]
 
+[[tavily-key]]
 == Tavily key
 
 For running some of these notebooks, you will need a Tavily key.
@@ -76,6 +77,7 @@ Once logged in, access the `Overview` section where you will find your default A
 
 image::tavily_key.png[Tavily Key]
 
+[[add-your-tavily-key-to-env]]
 == Add your Tavily key to .env
 
 We will now add the Tavily key to our `.env` file. Once you have obtained your Tavily key, go back to your Jupyter workbench and navigate to `File -> New -> Terminal` to open a terminal window within the workbench.
@@ -97,6 +99,7 @@ image::update_env_file.png[Update .env file]
 After editing, hit the `esc` key on your keyboard to exit from insert mode, and type `:wq` to save and exit.
 Now we are ready to run the notebook!
 
+[[run-notebook-0]]
 == Run Notebook 0
 
 To execute the notebook cells, navigate to the top toolbar. Click the fast-forward (⏩) icon to restart the kernel and execute all cells sequentially from top to bottom.

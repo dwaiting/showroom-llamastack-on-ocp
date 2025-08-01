@@ -2,12 +2,36 @@
 
 In this notebook, we will be building an advanced agent that interacts with multiple tools including external MCP tools and the built-in Llama Stack RAG tool.
 
-== Learning Objectives
+[[focus]]
+== Focus
+
+Creating a comprehensive incident response system that combines advanced agentic patterns, RAG-based knowledge retrieval, and MCP-driven external system interactions.
+
+[[learning-objective]]
+== Learning Objective
 
 * *Understand how to combine advanced agentic capabilities* including prompt chaining, RAG-based knowledge retrieval, and MCP-driven OpenShift and Slack interactions, into a cohesive incident response system.
 * *Learn how to design prompts that guide the agent through complex tasks* 
 * *Learn how to leverage RAG to inject relevant contextual information for problem-solving* 
 * *Learn how to utilize MCP tools to execute actions within our infrastructure and communicate findings effectively.*
+
+[[task-example]]
+== Task Example
+
+Users will build a complete automated incident response system that can analyze problems, search for solutions, interact with infrastructure, and communicate findings.
+
+[[expected-agent-behavior]]
+== Expected Agent Behavior
+
+The agent should demonstrate sophisticated problem-solving capabilities, efficiently combine multiple information sources, execute infrastructure actions, and provide comprehensive incident reports.
+
+[[key-concepts-demonstrated]]
+== Key Concepts Demonstrated
+
+* Advanced multi-tool agent orchestration
+* Integrated RAG and MCP workflow design
+* Complex incident response automation
+* Enterprise-grade agent architecture patterns
 
 == Slack Pre-Requisite
 

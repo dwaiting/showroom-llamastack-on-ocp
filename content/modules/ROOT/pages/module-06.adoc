@@ -2,9 +2,33 @@
 
 In this notebook, we will be building an advanced agent using Llama Stack that interacts with multiple external MCP tools.
 
-== Learning Objectives
+[[focus]]
+== Focus
+
+Building advanced agents that interact with external systems through MCP tools for operational automation and communication.
+
+[[learning-objective]]
+== Learning Objective
 
 * *Understand how to build and utilize agents that can interact directly with any external system by leveraging MCP tools.*
+
+[[task-example]]
+== Task Example
+
+Users will develop an agent that monitors OpenShift infrastructure and communicates status updates through Slack using MCP tools.
+
+[[expected-agent-behavior]]
+== Expected Agent Behavior
+
+The agent should effectively monitor system components, identify issues, and provide clear communication about system status through appropriate channels.
+
+[[key-concepts-demonstrated]]
+== Key Concepts Demonstrated
+
+* MCP tool integration and configuration
+* Cross-system communication and automation
+* Infrastructure monitoring and status reporting
+* Real-time operational workflows
 
 == Slack Pre-Requisite
 
