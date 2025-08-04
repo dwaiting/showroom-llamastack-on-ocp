@@ -35,7 +35,7 @@ For this lab, an OpenShift environment will be deployed for you with the followi
 [[rhoai-model-deployment-via-vllm]]
 == RHOAI model deployment via vLLM
 
-RHOAI model deployment makes LLMs accessible as scalable and manageable API endpoints. This enables developers and data scientists to integrate these models with LLama Stack applications. For our lab, we use https://docs.vlslm.ai/[vLLM] as a runtime for RHOAI model deployment. vLLM is an open-source, high-performance inference engine designed to optimize the deployment of large language models (LLMs) in real-time applications. At its core, vLLM introduces the PagedAttention algorithm, which draws inspiration from operating system paging techniques to manage key-value (KV) cache memory efficiently.
+RHOAI model deployment makes LLMs accessible as scalable and manageable API endpoints. This enables developers and data scientists to integrate these models with LLama Stack applications. For our lab, we use https://docs.vllm.ai/[vLLM] as a runtime for RHOAI model deployment. vLLM is an open-source, high-performance inference engine designed to optimize the deployment of large language models (LLMs) in real-time applications. At its core, vLLM introduces the PagedAttention algorithm, which draws inspiration from operating system paging techniques to manage key-value (KV) cache memory efficiently.
 
 [[models]]
 === Models
