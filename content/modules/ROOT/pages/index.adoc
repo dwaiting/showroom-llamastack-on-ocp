@@ -78,7 +78,7 @@ The https://github.com/manusa/kubernetes-mcp-server[OpenShift Model Context Prot
 
 *Slack MCP Server*
 
-The https://github.com/modelcontextprotocol/servers/tree/main/src/slack[Slack MCP Server]` offers a standard interface for LLMs to interact with Slack workspaces. Its capabilities include listing channels, posting messages, replying to threads, adding emoji reactions, retrieving message history, and accessing user profiles. This enables AI agents to seamlessly engage in Slack conversations, manage communication, and gain insights from user context.  In the advanced level notebooks, we use this server to connect to a public Slack workspace and send status updates about our running pods, along with error resolution steps.
+The https://github.com/modelcontextprotocol/servers/tree/main/src/slack[Slack MCP Server] offers a standard interface for LLMs to interact with Slack workspaces. Its capabilities include listing channels, posting messages, replying to threads, adding emoji reactions, retrieving message history, and accessing user profiles. This enables AI agents to seamlessly engage in Slack conversations, manage communication, and gain insights from user context.  In the advanced level notebooks, we use this server to connect to a public Slack workspace and send status updates about our running pods, along with error resolution steps.
 
 [[demo-notebooks-in-rhoai-workbench]]
 == Demo notebooks in RHOAI workbench
